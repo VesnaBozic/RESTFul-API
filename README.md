@@ -22,6 +22,11 @@
 
 The application or service doing the accessing is called the client, and the application or service containing the resource is called the server.
 
+The separation of concerns is the core theme of the Web’s client-server constraints.
+
+The Web is a client-server-based system, in which clients and servers have distinct
+parts to play
+
 ***JSON*** is usually used for communication, it is standard now
 
 It's a data format
@@ -31,6 +36,15 @@ It's a data format
 ***Endpoint*** is a place where we are making request
 
 ***REST*** - this is means of communication , like in real communication, are we taking on phone, are we texting , are we takling face to face 
+
+It’s not tied to HTTP, but is associated most commonly with it.
+
+The HTTP API is CRUD (Create, Retrieve, Update, and Delete)
+
+•	 GET = “give me some info” (Retrieve)
+•	 POST = “here’s some update info” (Update)
+•	 PUT = “here’s some new info” (Create)
+•	 DELETE = “delete some info” (Delete)
 
 Databases, web sites, and business applications need to exchange data. This is
 accomplished by defining standard data formats such as Extensible Markup Language
@@ -43,11 +57,19 @@ architectural style*** and allows for interaction with RESTful web services. RES
 
 ### Some APIs, such as SOAP or XML-RPC, impose a strict framework on developers. But REST APIs can be developed using virtually any programming language and support a variety of data formats. The only requirement is that they align to the following six REST design principles - also known as architectural constraints:
 
-1. ***Uniform interface***. All API requests for the same resource should look the same, no matter where the request comes from. The REST API should ensure that the same piece of data, such as the name or email address of a user, belongs to only one uniform resource identifier (URI). Resources shouldn’t be too large but should contain every piece of information that the client might need.
+1. ***Uniform Resource interface***. All API requests for the same resource should look the same, no matter where the request comes from. The REST API should ensure that the same piece of data, such as the name or email address of a user, belongs to only one uniform resource identifier (URI). Resources shouldn’t be too large but should contain every piece of information that the client might need.
 
 2. ***Client-server decoupling***. In REST API design, client and server applications must be completely independent of each other. The only information the client application should know is the URI of the requested resource; it can't interact with the server application in any other ways. Similarly, a server application shouldn't modify the client application other than passing it to the requested data via HTTP.
 
 3. ***Statelessness***. REST APIs are stateless, meaning that each request needs to include all the information necessary for processing it. In other words, REST APIs do not require any server-side sessions. Server applications aren’t allowed to store any data related to a client request.
+
+The stateless constraint dictates that a web server is not required to memorize the
+state of its client applications. As a result, each client must include all of the contextual
+information that it considers relevant in each interaction with the web server.
+
+Web servers ask clients to manage the complexity of communicating their
+application state so that the web server can service a much larger number of clients. This
+trade-off is a key contributor to the scalability of the Web’s architectural style.
 
 4. ***Cacheability***. When possible, resources should be cacheable on the client or server side. Server responses also need to contain information about whether caching is allowed for the delivered resource. The goal is to improve performance on the client side, while increasing scalability on the server side.
 
