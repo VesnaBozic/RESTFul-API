@@ -42,8 +42,11 @@ It’s not tied to HTTP, but is associated most commonly with it.
 The HTTP API is CRUD (Create, Retrieve, Update, and Delete)
 
 •	 GET = “give me some info” (Retrieve)
+
 •	 POST = “here’s some update info” (Update)
+
 •	 PUT = “here’s some new info” (Create)
+
 •	 DELETE = “delete some info” (Delete)
 
 Databases, web sites, and business applications need to exchange data. This is
@@ -144,6 +147,25 @@ one.
 
 ***Security*** is another aspect which needs to be considered independently as part
 of this framework when rolling out RESTful APIs to the end users.
+
+
+## REST
+
+REST is resource-based architecture. A resource is accessed via a common interface based on the HTTP standard methods. 
+REST asks developers to use HTTP methods explicitly and in a way that’s consistent with the protocol definition.
+Each resource is identified by a URL. Every resource should support the HTTP common operations,
+and REST allows that resource to have different representations, e.g., text, xml, json, etc. The rest client can ask for specific representation via the HTTP protocol.
+
+HTTP natively supports a mechanism based on headers to tell the server about the
+content you expect and you’re able to handle. Based on these hints, the server is
+responsible for returning the corresponding content in the correct format.
+
+If the server doesn’t support the requested format, it will send back a 406 status code
+(Not Acceptable) to notify the client that made the request.
+
+
+
+
 
 
 
