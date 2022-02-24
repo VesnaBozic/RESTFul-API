@@ -104,6 +104,26 @@ When we create an API, we are allowing others to make use of our service or prod
 
 ## Web Architectural Style
 
+There are two ways to define a system :
+
+- One is to start from a blank slate—an empty whiteboard—with no
+initial knowledge of the system being built or the use of familiar
+components until the needs are satisfied.
+
+- A second approach is to start with the full set of needs for the
+system, and constraints are added to individual components
+until the forces that influence the system are able to interact in
+harmony with each other.
+
+***REST*** follows the second approach. In order to define a REST architecture, a
+null-state is initially defined—a system that has no constraints whatsoever and where
+component differentiation is nothing but a myth—and constraints are added one by
+one.
+
+***Security*** is another aspect which needs to be considered independently as part
+of this framework when rolling out RESTful APIs to the end users.
+
+
 
 
 
