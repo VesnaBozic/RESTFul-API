@@ -1,5 +1,7 @@
 # RESTFul-API
 
+
+
 ***API*** - application programming interface
 
 > An API, or application programming interface, is a set of rules that define how applications or devices can connect to and communicate with each other.
@@ -22,11 +24,19 @@ The application or service doing the accessing is called the client, and the app
 
 ***JSON*** is usually used for communication, it is standard now
 
+It's a data format
+
 ***JavaScript Object Notation*** is language of communication
 
 ***Endpoint*** is a place where we are making request
 
 ***REST*** - this is means of communication , like in real communication, are we taking on phone, are we texting , are we takling face to face 
+
+Databases, web sites, and business applications need to exchange data. This is
+accomplished by defining standard data formats such as Extensible Markup Language
+(XML) or JavaScript Object Notation (JSON), as well as transfer protocols or Web services
+such as the Simple Object Access Protocol (SOAP) or the more popular Representational
+State Transfer (REST)
 
 A ***REST API (also known as RESTful API)*** is an application programming interface (API or web API) that conforms to the constraints of ***REST 
 architectural style*** and allows for interaction with RESTful web services. REST stands for representational state transfer
@@ -55,5 +65,45 @@ architectural style*** and allows for interaction with RESTful web services. RES
 The state of a resource at any particular instant, or timestamp, is known as the resource representation. This information can be delivered to a client in virtually any format including JavaScript Object Notation (JSON), HTML, XLT, Python, PHP, or plain text. JSON is popular because it’s readable by both humans and machines—and it is programming language-agnostic.
 
 Request headers and parameters are also important in REST API calls because they include important identifier information such as metadata, authorizations, uniform resource identifiers (URIs), caching, cookies and more. Request headers and response headers, along with conventional HTTP status codes, are used within well-designed REST APIs.
+
+
+## PROS 
+
+- Follows the philosophy of the Open Web
+- Relatively easy to implement and maintain
+- Clearly separates client and server implementations
+- Communication isn’t controlled by a single entity
+- Information can be stored by the client to prevent multiple calls.
+- Can return data in multiple formats (JSON, XML etc.)
+
+## CONS 
+
+- Only works on top of the HTTP protocol
+- Hard to enforce authorization and security on top of it
+
+
+## WE USE IT FOR 
+
+- Social media services
+- Social networks (Twitter)
+- Web chat services
+- Mobile services
+
+## SOAP WE USE FOR
+
+- Financial services (PayPal, Saleforce)
+- Payment gateways
+- Telecommunication services
+
+
+
+## Public API-s
+
+When we create an API, we are allowing others to make use of our service or product to create new applications. Pubilic APIs we can use
+
+
+## Web Architectural Style
+
+
 
 
